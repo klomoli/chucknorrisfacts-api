@@ -37,7 +37,7 @@ docker-compose -f docker-compose.yml up --build
 
 Nos montará las imagenes de postgresql y mailcatcher y nos ejecutará el proyecto en el puerto 3000, para acceder a mailcatcher entramos desde http://localhost:1080/
 
-Se incluye una colleción de postman para probar la api.
+Se incluye una colleción de postman para probar la api. https://github.com/klomoli/chucknorrisfacts-api/blob/main/chucknorris.postman_collection.json
 
 ### FRONT VUEJS
 
