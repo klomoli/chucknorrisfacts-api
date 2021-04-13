@@ -33,7 +33,13 @@ Una vez creada la imagen ejecutamos docker-compose
 
 ```sh
 docker-compose -f docker-compose.yml up --build  
+
 ```
+
+Para lanzar los specs
+```sh
+docker-compose run -e "RAILS_ENV=test" web bundle exec rspec spec   
+````
 
 Nos montará las imagenes de postgresql y mailcatcher y nos ejecutará el proyecto en el puerto 3000, para acceder a mailcatcher entramos desde http://localhost:1080/
 
