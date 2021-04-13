@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Resultado de su búsqueda <%= @email %></h1>
+    <h3>Term: <%= @search_decorator.term_value%></h3>
+    <h4>Category: <%= @search_decorator.filter_value%></h4>
+    <pre><%=@search_decorator.response_value%></pre>
+  </body>
+</html>

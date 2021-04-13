@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "f63e38ca-5a1f-4a3a-9bc8-1bd2b7a7c838",
+		"name": "chucknorris",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Random Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/facts?random_category=animal",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"facts"
+					],
+					"query": [
+						{
+							"key": "random_category",
+							"value": "animal"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/facts?search=trump",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"facts"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "trump"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query by Random",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/facts?randomness=1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"facts"
+					],
+					"query": [
+						{
+							"key": "randomness",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Searches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/searches/200/0",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"searches",
+						"200",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/searches/5/0/random",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"searches",
+						"5",
+						"0",
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send by email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "aa@email.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/search/16/email",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"search",
+						"16",
+						"email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
