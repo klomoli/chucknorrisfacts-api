@@ -26,7 +26,7 @@ Se ha dockerizado la app de Vuejs y la parte back en Ruby on Rails con Postgresq
 ### BACK
 Hacemos el build del proyecto
 ```sh
-cd chucknorris-api
+cd chucknorrisfacts-api-main
 docker build -t rails-docker .
 ```
 Una vez creada la imagen ejecutamos docker-compose
